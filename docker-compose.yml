@@ -1,0 +1,21 @@
+services:
+
+  gather:
+    build: ./gather
+
+  graphite:
+    image: graphiteapp/graphite-statsd
+    volumes:
+      - graphite-storage:/opt/graphite/storage
+
+  grafana:
+    build: ./grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+
+
+volumes:
+  graphite-storage:
+  grafana-storage:
