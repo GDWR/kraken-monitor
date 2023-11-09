@@ -49,13 +49,9 @@
             "insertNulls": false,
             "lineInterpolation": "smooth",
             "lineStyle": {
-              "dash": [
-                10,
-                10
-              ],
-              "fill": "dash"
+              "fill": "solid"
             },
-            "lineWidth": 3,
+            "lineWidth": 2,
             "pointSize": 1,
             "scaleDistribution": {
               "type": "linear"
@@ -83,7 +79,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "currencyUSD"
         },
         "overrides": []
       },
@@ -147,13 +144,9 @@
             "insertNulls": false,
             "lineInterpolation": "smooth",
             "lineStyle": {
-              "dash": [
-                10,
-                10
-              ],
-              "fill": "dash"
+              "fill": "solid"
             },
-            "lineWidth": 3,
+            "lineWidth": 2,
             "pointSize": 1,
             "scaleDistribution": {
               "type": "linear"
@@ -181,7 +174,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "currencyUSD"
         },
         "overrides": []
       },
@@ -245,13 +239,9 @@
             "insertNulls": false,
             "lineInterpolation": "smooth",
             "lineStyle": {
-              "dash": [
-                10,
-                10
-              ],
-              "fill": "dash"
+              "fill": "solid"
             },
-            "lineWidth": 3,
+            "lineWidth": 2,
             "pointSize": 1,
             "scaleDistribution": {
               "type": "linear"
@@ -279,12 +269,13 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "currencyUSD"
         },
         "overrides": []
       },
       "gridPos": {
-        "h": 12,
+        "h": 10,
         "w": 24,
         "x": 0,
         "y": 10
@@ -310,7 +301,7 @@
           },
           "refCount": 0,
           "refId": "A",
-          "target": "aliasByNode(stats.gauges.$Symbol.ask, 3)"
+          "target": "aliasByNode(stats.gauges.$Symbol.ask, 2, 3)"
         },
         {
           "datasource": {
@@ -320,7 +311,7 @@
           "hide": false,
           "refCount": 0,
           "refId": "B",
-          "target": "aliasByNode(stats.gauges.$Symbol.buy, 3)"
+          "target": "aliasByNode(stats.gauges.$Symbol.buy, 2, 3)"
         }
       ],
       "title": "Ask Price",
@@ -334,9 +325,13 @@
     "list": [
       {
         "current": {
-          "selected": false,
-          "text": "SOL-USD",
-          "value": "SOL-USD"
+          "selected": true,
+          "text": [
+            "DOT-USD"
+          ],
+          "value": [
+            "DOT-USD"
+          ]
         },
         "datasource": {
           "type": "graphite",
@@ -345,7 +340,7 @@
         "definition": "stats.gauges.*",
         "hide": 0,
         "includeAll": false,
-        "multi": false,
+        "multi": true,
         "name": "Symbol",
         "options": [],
         "query": {
