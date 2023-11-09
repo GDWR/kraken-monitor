@@ -1,10 +1,9 @@
 #!/usr/bin/env python
-
+import asyncio
 import logging
 import json
 import sys
 
-import asyncio
 import websockets
 import statsd
 
