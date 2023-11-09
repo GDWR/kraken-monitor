@@ -30,10 +30,21 @@ async def main():
         data = {
             "event": "subscribe",
             "pair": [
-                "SOL/USD",
-                "ETH/USD",
-                "AVX/USD",
                 "BTC/USD",
+                "ETH/USD",
+                "USDT/USD",
+                "BNB/USD",
+                "XRP/USD",
+                "USDC/USD",
+                "SOL/USD",
+                "ADA/USD",
+                "DOGE/USD",
+                "TON/USD",
+                "TRX/USD",
+                "LINK/USD",
+                "MATIC/USD",
+                "DOT/USD",
+                "WBTC/USD",
             ],
             "subscription": {
                 "name": "ticker"
